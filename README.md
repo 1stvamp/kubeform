@@ -180,7 +180,8 @@ kube.create(
       },
       network: {
         range: '', // give containers a CIDR range to be assigned within
-        vpc: '' // set the id/name for a preset network or VPC
+        vpc: '', // set the id/name for a preset network or VPC
+	subset: '' // set id/name for preset subnetwork or VPC subset, required for some types such as NAT'd networks
       }
     },
     flags: {

@@ -257,7 +257,8 @@ const VALIDATION = joi.object().keys({
     }),
     network: joi.object().keys({
       range: joi.string().regex(/[0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}/),
-      vpc: joi.string()
+      vpc: joi.string(),
+      subset: joi.string()
     })
   }),
   flags: joi.object().keys({

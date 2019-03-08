@@ -291,7 +291,7 @@ function getClusterConfig (options) {
         getNodeConfig(options)
       ],
       network: options.worker.network ? options.worker.network.vpc : undefined,
-      subnetwork: options.worker.network.subset ? options.worker.network.subset : undefined,
+      subnetwork: (options.worker.network || {}).subset ? options.worker.network.subset : undefined,
       clusterIpv4Cidr: options.worker.network ? options.worker.network.range : undefined,
       initialClusterVersion: options.version,
       locations: options.zones,

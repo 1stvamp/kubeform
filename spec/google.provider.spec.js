@@ -126,6 +126,7 @@ describe('Google Provider', function () {
           }
         ],
         network: undefined,
+        subnetwork: undefined,
         networkPolicy: {
           enabled: true,
           provider: 'CALICO'
